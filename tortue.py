@@ -10,7 +10,15 @@ def equilateral(longueur):
     for _ in range(3):
         t.forward(longueur)
         t.right(180-60)
-    
 
-equilateral(100)
+def carre(longeur):
+    """
+    longueur(int) : longueur d'un coter du carre
+    Dessine un carre de cote longueur
+    """
+    for _ in range(4):
+        t.forward(longeur)
+        t.left(90)
+
+carre(50)
 turtle.exitonclick()
