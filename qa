@@ -1,0 +1,24 @@
+[1mdiff --git a/tortue.py b/tortue.py[m
+[1mindex e69de29..b04ca2b 100644[m
+[1m--- a/tortue.py[m
+[1m+++ b/tortue.py[m
+[36m@@ -0,0 +1,19 @@[m
+[32m+[m[32mimport turtle[m
+[32m+[m[32mt = turtle.Turtle()[m
+[32m+[m[32mt.speed(0) # maximum speed[m
+[32m+[m[32ms = turtle.getscreen()[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef equilateral(longueur):[m
+[32m+[m[32m    """[m
+[32m+[m[32m    longueur(int) : longueur d'un coter du triangle[m
+[32m+[m[32m    Dessine un triangle equilateral de cote longueur[m
+[32m+[m[32m    """[m
+[32m+[m[32m    for _ in range(3):[m
+[32m+[m[32m        t.forward(longueur)[m
+[32m+[m[32m        t.right(180-60)[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32mequilateral(100)[m
+[32m+[m[32mturtle.exitonclick()[m

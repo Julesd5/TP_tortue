@@ -7,18 +7,24 @@ def equilateral(longueur):
     longueur(int) : longueur d'un coter du triangle
     Dessine un triangle equilateral de cote longueur
     """
-    for _ in range(3):
-        t.forward(longueur)
-        t.right(180-60)
+    polygone(longueur, 3)
 
-def carre(longeur):
+def carre(longueur):
     """
     longueur(int) : longueur d'un coter du carre
     Dessine un carre de cote longueur
     """
-    for _ in range(4):
-        t.forward(longeur)
-        t.left(90)
+    polygone(longueur, 4)
 
-carre(50)
+def polygone(longueur, nb_cotes):
+    """_summary_
+
+    Args:
+        longueur (str): longueur du polygone
+        nb_cotes (str): nombres de cotes du polygone
+    """
+    for _ in range(nb_cotes):
+        t.forward(longueur)
+        t.right(360/nb_cotes)
+
 turtle.exitonclick()
