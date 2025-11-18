@@ -16,15 +16,17 @@ def carre(longueur):
     """
     polygone(longueur, 4)
 
-def polygone(longueur, nb_cotes):
-    """_summary_
-
+def polygone(longueur, nb_cotes, ajout = 0):
+    """
     Args:
         longueur (str): longueur du polygone
         nb_cotes (str): nombres de cotes du polygone
+        ajout    (str): ajoute "ajout" a chaque cote 
     """
     for _ in range(nb_cotes):
+        longueur += ajout
         t.forward(longueur)
         t.right(360/nb_cotes)
+
 
 turtle.exitonclick()
