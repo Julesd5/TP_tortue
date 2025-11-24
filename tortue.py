@@ -38,8 +38,8 @@ def figure1():
         longueur += 4
 def figure2(longueur):
     for _ in range(200):
-        polygone(longueur,4,1,1)
-        longueur = longueur + 4
+        polygone(longueur,4,2,0)
+        longueur = longueur + 8
 
 figure2(5)
 turtle.exitonclick()
