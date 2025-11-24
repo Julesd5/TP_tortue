@@ -33,8 +33,13 @@ def polygone(longueur, nb_cotes, ajout = 0, deviation = 0):
 
 def figure1():
     longueur = 5
-    for n in range(500):
+    for n in range(100):
         polygone(longueur, 4, ajout=1, deviation=1)
-        longueur += 6
-figure1()
+        longueur += 4
+def figure2(longueur):
+    for _ in range(200):
+        polygone(longueur,4,1,1)
+        longueur = longueur + 4
+
+figure2(5)
 turtle.exitonclick()
