@@ -31,5 +31,10 @@ def polygone(longueur, nb_cotes, ajout = 0, deviation = 0):
         t.right(360/nb_cotes + total_dev)
         total_dev += deviation
 
-
+def figure1():
+    longueur = 5
+    for n in range(500):
+        polygone(longueur, 4, ajout=1, deviation=1)
+        longueur += 6
+figure1()
 turtle.exitonclick()
